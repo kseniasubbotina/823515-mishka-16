@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ксения Субботина](https://up.htmlacademy.ru/adaptive/16/user/823515).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Половков].
 
 ---
 
