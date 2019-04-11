@@ -1,0 +1,19 @@
+.week-product__title {
+	@include font-bold;
+}
+
+
+.week-product__name {
+	@include font(17px, 20px, $primary-color);
+	color: $light-green-color;
+	text-transform: uppercase;
+}
+
+.week-product__description {
+	@include font-regular;
+}
+
+.week-product__property-list {
+	@include font-regular;
+	@include font(15px, 20px, $gray-color)
+}

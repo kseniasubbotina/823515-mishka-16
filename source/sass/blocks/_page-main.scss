@@ -1,0 +1,22 @@
+.page-main__title {
+	text-align: center;
+	@include font-bold;
+
+}
+
+.page-main__list {
+	@include link;
+	@include font-regular;
+}
+
+.page-main__item {
+	@include font(19px, 24px, $white-color);
+}
+
+.page-main__item--interior {
+	background-color: $light-green-color;
+}
+
+.page-main__item--toys {
+	background-color: $green-color;
+}
