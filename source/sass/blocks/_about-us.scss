@@ -1,0 +1,27 @@
+.about-us {
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 100px;
+}
+
+.about-us_header {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 60px;
+
+	@include font-bold;
+	@include font(25px, 30px, $primary-color);
+}
+
+.about-us_list {
+	margin: 0;
+	padding: 0;
+
+	@include list-item;
+}
+
+.about-us__item {
+	margin-bottom: 100px;
+	@include font-bold;
+	@include font(17px, 20px, $primary-color);
+}
