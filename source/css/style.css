@@ -118,6 +118,92 @@ body {
 
 .week-product__toggle {
   margin: 0;
+  padding: 0;
+  margin-bottom: 75px; }
+
+.about-us {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 100px; }
+
+.about-us_header {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000; }
+
+.about-us_list {
+  margin: 0;
+  padding: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none; }
+
+.about-us__item {
+  margin-bottom: 100px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000; }
+
+.recall {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 90px; }
+
+.recall__tittle {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000; }
+
+.recall__item {
+  margin: 0;
   padding: 0; }
+
+.recall__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444; }
+
+.recall__autor {
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000; }
+
+.recall_email {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000; }
 
 /*# sourceMappingURL=style.css.map */

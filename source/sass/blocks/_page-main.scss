@@ -19,7 +19,7 @@
 .page-main__list {
 	padding-left: 30px;
 	
-	@include link;
+	@include list-item;
 	@include font-bold;
 	@include font(19px, 24px, $white-color);
 }

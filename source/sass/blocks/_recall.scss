@@ -1,0 +1,41 @@
+.recall {
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 90px;
+}
+.recall__tittle {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 40px;
+
+	@include font-bold;
+	@include font(25px, 30px, $primary-color);
+}
+.recall__item {
+	margin: 0;
+	padding: 0;
+}
+
+.recall__text {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	@include font-regular;
+	@include font(15px, 30px, $gray-color);	
+}
+
+.recall__autor {
+	margin: 0;
+	padding: 0;
+
+	@include font-bold;
+	@include font(17px, 24px, $primary-color);
+}
+
+.recall_email {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+	@include font-regular;
+	@include font(17px, 24px, $primary-color);
+}
