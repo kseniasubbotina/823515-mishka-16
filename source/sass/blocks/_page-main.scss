@@ -1,16 +1,27 @@
+.page-main-wrapper {
+	background-image:url(../img/hero-mobile@1x.jpg);	
+}
+
+
 .page-main__title {
+	padding-top: 75px;
+	padding-left: 30px;
+	margin-bottom: 208px;
 	text-align: center;
 	@include font-bold;
-
+	@include font(27px, 30px, $primary-color);
 }
 
 .page-main__list {
 	@include link;
-	@include font-regular;
+	@include font-bold;
+	@include font(19px, 24px, $white-color);
 }
 
 .page-main__item {
-	@include font(19px, 24px, $white-color);
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-bottom: 30px;
 }
 
 .page-main__item--interior {
