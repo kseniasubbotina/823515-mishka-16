@@ -1,14 +1,15 @@
-.page-main-wrapper {
+.main-menu {
 	margin-bottom: 33px;
 	background-image:url(../img/hero-mobile@1x.jpg);	
 }
 
 
-.page-main__title {
+.main-menu__title {
 	padding-top: 75px;
 	padding-left: 30px;
+	padding-right: 30px;
 	margin: 0;
-	margin-bottom: 208px;
+	margin-bottom: 200px;
 
 	text-align: center;
 
@@ -16,7 +17,7 @@
 	@include font(27px, 30px, $primary-color);
 }
 
-.page-main__list {
+.main-menu__list {
 	padding-left: 30px;
 	
 	@include list-item;
@@ -24,16 +25,19 @@
 	@include font(19px, 24px, $white-color);
 }
 
-.page-main__item {
-	padding-top: 30px;
-	padding-left: 30px;
-	padding-bottom: 30px;
+.main-menu__item {
+	padding: 30px;
 }
 
-.page-main__item--interior {
+.main-menu__item a {
+	@include list-item;
+	color: #ffffff;
+}
+
+.main-menu__item--interior {
 	background-color: $light-green-color;
 }
 
-.page-main__item--toys {
+.main-menu__item--toys {
 	background-color: $green-color;
 }
