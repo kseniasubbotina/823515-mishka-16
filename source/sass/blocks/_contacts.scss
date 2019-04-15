@@ -1,4 +1,4 @@
-.contscts__tittle {
+.contacts__tittle {
 	padding: 0;
 	margin: 0;
 	margin-bottom: 40px;
@@ -6,19 +6,28 @@
 	@include font(18px, 30px, $primary-color);
 }
 
-.contscts__list {
+.contacts__list {
 	margin: 0;
 	padding: 0;
 	@include font-regular;
 	@include font(15px, 30px, $gray-color);
 }
-.contscts__item {
+.contacts__item {
 	padding: 0;
 	margin: 0;
 	white-space: nowrap;
 }
-.contscts__value {
+.contacts__value {
 	padding: 0;
 	margin: 0;
 	padding-left: 30px;
 }
+.contacts__link {
+	text-transform: uppercase;
+	text-align: center;
+
+	@include list-item;
+	@include font-bold;
+	@include font(17px, 20px, $gray-color);
+}
+

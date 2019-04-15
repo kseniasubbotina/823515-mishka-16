@@ -17,7 +17,6 @@
 }
 
 .link-button__link {
-
 	@include list-item;
 	@include font-bold;
 	@include font(17px, 20px, $gray-color);

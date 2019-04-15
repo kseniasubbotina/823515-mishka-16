@@ -1,0 +1,8 @@
+.process__description-wrapper {
+	margin: 0;
+	margin-bottom: 95px;
+	padding: 0;
+	padding-left: 35px;
+	padding-right: 35px;
+
+}

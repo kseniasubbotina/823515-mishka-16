@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-title">
-    <a class="page-title__logo">
-      <img class="page-title__logo-image" src="#" width="85" height="35" alt="Мишка">
+    <a class="page-title__logo" href="index.html">
+      <img class="page-title__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Мишка">
     </a>
   </header>
   <!--главная навигация-->
@@ -39,54 +40,66 @@
   <main class="catalog-page">
     <h1 class="catalog-page__tittle">Каталог товаров</h1>
     <!--секция товаров-->
-    <secion class="catalog">
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <a class="catalog__image-link" href="#">
-            <img class="catalog-image" src="#" width="260" height="195" alt="Зайчик">
-          </a>
-          <div class="catalog__wrapper">
-            <h2 class="catalog__tittle">Зайчик-попрыгайчик</h2>
-            <p class="catalog__description">Рост 30 см, вес 200 г</p>
-            <b class="catalog__cost">1 200 руб.</b>
-            <button class="catalog__toggle" type="button">В корзину</button>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__image-link" href="#">
-            <img class="catalog-image" src="#" width="260" height="195" alt="Корзина">
-          </a>
-          <div class="catalog__wrapper">
-            <h2 class="catalog__tittle">Корзина для белья</h2>
-            <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
-            <b class="catalog__cost">690 руб.</b>
-            <button class="catalog__toggle" type="button">В корзину</button>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__image-link" href="#">
-            <img class="catalog-image" src="#" width="260" height="195" alt="Корзина">
-          </a>
-          <div class="catalog__wrapper">
-            <h2 class="catalog__tittle">Большая корзина для игрушек</h2>
-            <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
-            <b class="catalog__cost">1 500 руб.</b>
-            <button class="catalog__toggle" type="button">В корзину</button>
-          </div>
-        </li>
-      </ul>
-    </secion>
-    <!--процесс производства-->
-    <section class="process">
-      <h2 class="process-tittle">Процесс производства</h2>
-      <div class="process-video">
-        <img class="process__video-image" src="#" width="260" height="150" alt="Видео">
-      </div>
-      <p class="prosecc__description">
-        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-      </p>
-      <a class="prosecc__toggle button" href="form.html">Сделать заказ</a>
-    </section>
+    <div class="catalog-page__wrapper">
+      <secion class="catalog">
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a class="catalog__image-link" href="#">
+              <img class="catalog-image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик">
+            </a>
+            <div class="catalog__description-wrapper">
+              <h2 class="catalog__tittle">Зайчик-попрыгайчик</h2>
+              <p class="catalog__description">Рост 30 см, вес 200 г</p>
+            </div>
+            <div class="catalog__cost-wrapper">
+              <b class="catalog__cost">1 200 руб.</b>
+              <button class="catalog__toggle" type="button">В корзину</button>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__image-link" href="#">
+              <img class="catalog-image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзина">
+            </a>
+            <div class="catalog__description-wrapper">
+              <h2 class="catalog__tittle">Корзина для белья</h2>
+              <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
+            </div>
+            <div class="catalog__cost-wrapper">
+              <b class="catalog__cost">690 руб.</b>
+              <button class="catalog__toggle" type="button">В корзину</button>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__image-link" href="#">
+              <img class="catalog-image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Корзина">
+            </a>
+            <div class="catalog__description-wrapper">
+              <h2 class="catalog__tittle">Большая корзина для игрушек</h2>
+              <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
+            </div>
+            <div class="catalog__cost-wrapper">
+              <b class="catalog__cost">1 500 руб.</b>
+              <button class="catalog__toggle" type="button">В корзину</button>
+            </div>
+          </li>
+        </ul>
+      </secion>
+      <!--процесс производства-->
+      <section class="process">
+        <h2 class="process-tittle">Процесс производства</h2>
+        <div class="process-video">
+          <img class="process__video-image" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео">
+        </div>
+        <div class="process__description-wrapper">
+          <p class="process__description">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </p>
+          <p class="process__toggle link-button">
+            <a class="link-button__link" href="form.html">Сделать заказ</a>
+          </p>
+        </div>
+      </section>
+    </div>
     <!--футер-->
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -103,7 +116,7 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link button" href="#">Разработано</a>
+        <a class="copyright__link" href="#">Разработано</a>
       </div>
     </footer>
 </body>

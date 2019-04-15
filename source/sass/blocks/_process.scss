@@ -1,0 +1,23 @@
+.process-tittle {
+	margin:0;
+	padding: 0;
+	margin-bottom: 25px;
+
+	text-align: center;
+	@include font-bold;
+	@include font(17px, 24px, $primary-color);
+}
+.process-video {
+	margin-bottom: 34px;
+}
+.process__description {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+	@include font-regular;
+	@include font(13px, 24px, $gray-color);
+}
+.process__toggle {
+	margin: 0;
+}
+
