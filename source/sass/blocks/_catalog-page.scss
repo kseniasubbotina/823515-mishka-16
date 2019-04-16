@@ -1,11 +1,10 @@
 .catalog-page__tittle {
-	padding-top: 75px;
-	padding-bottom: 75px;
-	margin: 0;
-	margin-bottom: 30px;
-	text-align: center;
-	background-color: $light-gray;
+  padding: 75px 0 75px 0;
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: $light-gray;
 
-	@include font-bold;
-	@include font(27px, 30px, $primary-color);
+  @include font-bold;
+  @include font(27px, 30px, $primary-color);
 }

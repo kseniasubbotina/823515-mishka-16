@@ -1,45 +1,45 @@
 .about-us {
-	margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .about-us_header {
-	margin: 0;
-	padding: 0;
-	margin-bottom: 60px;
+  margin: 0 0 60px 0;
+  padding: 0;
 
-	@include font-bold;
-	@include font(25px, 30px, $primary-color);
+  @include font-bold;
+  @include font(25px, 30px, $primary-color);
 }
 
 .about-us_list {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 
 .about-us__item {
-	@include list-item;
-	margin-bottom: 100px;
+  @include list-item;
+  margin-bottom: 100px;
 
-	@include font-bold;
-	@include font(17px, 20px, $primary-color);
+  @include font-bold;
+  @include font(17px, 20px, $primary-color);
 }
 
 .recall__prew {
-	width: 50%;
-	padding: 20px;
-	border: 2px solid $gray-color;
+  width: 50%;
+  padding: 20px;
+  border: 2px solid $gray-color;
 
-	@include font-bold;
-	@include font(17px, 20px, $gray-color);
-	background-color: transparent;
+  @include font-bold;
+  @include font(17px, 20px, $gray-color);
+  background-color: transparent;
 }
-.recall__next {
-	width: 50%;
-	padding: 20px;
-	border: 2px solid $gray-color;
 
-	@include font-bold;
-	@include font(17px, 20px, $gray-color);
-	background-color: transparent;
+.recall__next {
+  width: 50%;
+  padding: 20px;
+  border: 2px solid $gray-color;
+
+  @include font-bold;
+  @include font(17px, 20px, $gray-color);
+  background-color: transparent;
 }

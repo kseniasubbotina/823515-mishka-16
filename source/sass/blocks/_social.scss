@@ -1,15 +1,16 @@
 .social {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .social__item {
-	padding: 20px;
-	text-align: center;
+  padding: 20px;
+  text-align: center;
 }
-.social__link {
-	color: $primary-color;
 
-	@include list-item;
-	@include font-regular;
+.social__link {
+  color: $primary-color;
+
+  @include list-item;
+  @include font-regular;
 }

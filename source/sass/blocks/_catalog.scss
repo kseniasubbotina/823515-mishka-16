@@ -1,32 +1,34 @@
 .catalog__list {
-	@include list-item;
+  @include list-item;
 }
 
 .catalog__item {
-	background-color: white;
-	margin-bottom: 30px;
+  background-color: white;
+  margin-bottom: 30px;
 }
+
 .catalog-image {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .catalog__tittle {
-	margin: 0;
-	margin-bottom: 10px;
-	@include font-bold;
-	@include font(17px, 24px, $primary-color);
+  margin: 0 0 10px 0;
+  @include font-bold;
+  @include font(17px, 24px, $primary-color);
 }
 
 .catalog__description {
-	margin: 0;
-	padding: 0;
-	@include font-regular;
-	@include font(13px, 30px, $primary-color);
+  margin: 0;
+  padding: 0;
+  @include font-regular;
+  @include font(13px, 30px, $primary-color);
 }
+
 .catalog__cost {
-	@include font-bold;
-	@include font(15px, 24px, $primary-color);
+  @include font-bold;
+  @include font(15px, 24px, $primary-color);
 }
+
 .catalog__toggle {
-	background: transparent;
+  background: transparent;
 }
