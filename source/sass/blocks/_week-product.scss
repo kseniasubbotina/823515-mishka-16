@@ -1,5 +1,6 @@
 .week-product__title {
   margin: 0 0 20px 0;
+
   @include font-bold;
 }
 
@@ -24,8 +25,9 @@
 
 .week-product__property-list {
   margin-bottom: 40px;
+
   @include font-regular;
-  @include font(15px, 20px, $gray-color)
+  @include font(15px, 20px, $gray-color);
 }
 
 .week-product__property {
