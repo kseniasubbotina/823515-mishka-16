@@ -8,35 +8,37 @@
 </head>
 
 <body>
-  <header class="page-title">
-    <a class="page-title__logo">
-      <img class="page-title__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Мишка">
-    </a>
+  <header class="page-header">
+    <!--главная навигация-->
+    <nav class="main-nav">
+      <a class="main-nav__logo">
+        <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Мишка">
+      </a>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+        <ul class="main-nav__list site-list main-nav__wrapper-nav">
+          <li class="site-list__item site-list__item-tablet">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item site-list__item-tablet">
+            <a  href="#">Вязание на заказ</a>
+          </li>
+        </ul>
+
+      <div class="main-nav__wrapper-toggles">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--search">
+            <a href="#">Поиск</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--basket">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
-  <!--главная навигация-->
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Вязание на заказ</a>
-        </li>
-      </ul>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--search">
-          <a href="#">Поиск по сайту</a>
-        </li>
-      </ul>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--basket">
-          <a href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
   <!--контент страницы-->
   <main class="page-main">
     <section class="main-menu">
