@@ -1,0 +1,11 @@
+.page-footer__copyright {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.copyright__link {
+  @include list-item;
+  @include font-bold;
+  @include font(19px, 18px, $primary-color);
+}
