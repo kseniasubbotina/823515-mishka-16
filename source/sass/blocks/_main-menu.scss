@@ -56,6 +56,9 @@
 
     @include font(43px, 50px, $primary-color);
   }
+  .main-nav__wrapper-toggles {
+    flex-grow: 1;
+  }
   .main-menu__list {
     flex-direction: row;
     flex-grow: 1;
