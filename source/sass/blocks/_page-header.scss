@@ -1,7 +1,60 @@
 .main-nav {
   display:flex;
   flex-direction: column;
+
+  position: relative;
+  width: 320px;
+  min-height: 320;
+  margin: 0 auto;
+  background-color: #ffffff;
 }
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  width: 80px;
+  height: 80px;
+
+  background-color: #ffffff;
+
+  cursor: pointer;
+}
+
+.main-nav--closed .main-nav__toggle {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("..img/icon-menu-close.svg");
+  background-repeat: no-repeat;
+}
+.main-nav--opend .main-nav__toggle {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("..img/icon-menu-open.svg");
+  background-color: black;
+  background-repeat: no-repeat;
+}
+
+/*кнопка css
+.main-nav__toggle::before {
+  content: "";
+  position: abcolute;
+
+  width: 20px;
+  height: 2px;
+
+  background-color: #000000;
+  box-shadow: 0 5px 0 0 #000000, 0 5px 0 0 #000000;
+}
+*/
+
 .main-nav__logo {
   display: flex;
   flex-direction: column;
@@ -13,18 +66,13 @@
   height: 35px;
   width: 85px;
 }
-.main-nav__toggle {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
 
-.main-nav__list {
-  padding: 0;
-  margin: 0;
+.main-nav__item a {
+  
+  
+  color: #ffffff;
 
-  @include font-bold;
-  @include font(17px, 24px, $primary-color);
+  @include list-item;
 }
 
 .main-nav__wrapper-buy {
@@ -42,7 +90,7 @@
   @include font(15px, 24px, $gray-color);
 }
 .site-list__item {
-  padding: 30px 30px;
+
   text-align: center;
 }
 
@@ -51,12 +99,39 @@
   color: $primary-color;
 }
 
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+  .main-nav--closed .site-list__item--active {
+    display: block;
+  }
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+  .main-nav--nojs .main-nav {
+    position: static;
+    min-height: 0;
+  }
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: -90px;
     align-items: center;
+  }
+  .main-nav__menu-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 320;
+    margin: 0 auto;
+    background-color: #ffffff;
+
   }
   .main-nav__toggle {
     display: none;
