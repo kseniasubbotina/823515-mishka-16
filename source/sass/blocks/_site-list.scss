@@ -1,96 +1,127 @@
 .site-list {
-    @include font-bold;
-    @include font(17px, 24px, $primary-color);
-    @include list-item;
-    
+  @include font-bold;
+  @include font(17px, 24px, $primary-color);
+  @include list-item;
 }
 .site-list__item {
-    background-color: #ffffff;
-    border-top: 1px solid #ececec;
+  background-color: #ffffff;
+  border-top: 1px solid #ececec;
 }
 .site-list__item a {
-    display: block;
-    padding: 30px;
-    
-    color: $primary-color;
+  display: block;
+  padding: 30px;
+
+  color: $primary-color;
 }
 .site-list a[href]:hover {
-    color:rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .site-list a[href]:active {
-    color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 .site-list__item--search {
-    position: relative;
+  position: relative;
 }
 .site-list__item--basket {
-    position: relative;
+  position: relative;
 }
 
 .site-list__search-icon {
+  position: absolute;
+  top: 33px;
+  left: 30px;
+  width: 17.6px;
+  height: 17.6px;
+  opacity: 0.2;
+}
+.site-list__search-icon polygon {
+  fill: #000000;
+}
+.site-list__basket-icon {
+  position: absolute;
+  top: 33px;
+  left: 30px;
+  width: 20.294px;
+  height: 18.849px;
+  opacity: 0.2;
+}
+.site-list__basket-icon polygon {
+  fill: #000000;
+}
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    border: none;
+    background-color: transparent;
+    @include list-item;
+    @include font(15px, 24px, $primary-color);
+  }
+  .site-list__item a {
+    padding: 0;
+  }
+  .site-list__item-top {
+    padding: 30px 0 30px 30px;
+  }
+  .site-list__item-tablet {
+    padding: 20px 30px 0 0;
+  }
+
+  .site-list__search-icon {
     position: absolute;
-    top: 33px;
-    left: 30px;
+    top: 0;
+    left: 0;
     width: 17.6px;
     height: 17.6px;
     opacity: 0.2;
-}
-.site-list__search-icon polygon {
-    fill: #000000;
-}
-.site-list__basket-icon {
-    position: absolute;
-    top: 33px;
-    left: 30px;
-    width:20.294px;
-    height:18.849px;
-    opacity: 0.2;
-}
-.site-list__basket-icon polygon {
-    fill: #000000;
-}
-@media(min-width: $tablet-width) {
-    .site-list__item {
-        border: none;
-    }
-    .site-list__item a {
-        display: flex;
-        padding: 0;
-    }
-    .site-list__item-top {
-        padding: 30px;
-    }
-
-    .site-list__search-icon {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 17.6px;
-        height: 17.6px;
-        opacity: 0.2;
-    }
-    .site-list__item--basket svg {
-        padding: 30px;
-    }
-    .site-list__item--search svg{
-        border-right: 2px solid #000000;
-        border-left: 2px solid #000000;
-        padding: 30px;
-    }
-    .site-list__search-icon polygon {
-        fill: #000000;
-    }
-    .site-list__basket-icon {
-        position: absolute;
-        top: 0;
-        left: -60px;
-        width:20.294px;
-        height:18.849px;
-        opacity: 0.2;
-    }
-    .site-list__basket-icon polygon {
-        fill: #000000;
-    }
+  }
+  .site-list__item--basket svg {
+    border-left: 2px solid #000000;
+    padding: 30px;
+  }
+  .site-list__item--search svg {
     
+    border-left: 2px solid #000000;
+    padding: 30px;
+  }
+  .site-list__search-icon polygon {
+    fill: #000000;
+  }
+  .site-list__basket-icon {
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 20.294px;
+    height: 18.849px;
+    opacity: 0.2;
+  }
+  .site-list__basket-icon polygon {
+    fill: #000000;
+  }
+  .site-list__item--delivery {
+    padding: 20px 0 0 0;
+    @include font-regular;
+    color: $gray-color;
+  }
+}
+@media (min-width: $desctop-width) {
+  .site-list__item {
+    @include font(17px, 24px, $primary-color);
+  }
+  .site-list__item-tablet {
+    margin-right: 60px;
+    padding: 30px 0;
+  }
+  .site-list__item-top {
+    margin-left: 60px;
+    padding: 30px 0;
+  }
+  .site-list__item--buy {
+    margin-right: 60px;
+    padding: 20px 0;
+    @include font(15px, 24px, $primary-color);
+  }
+  .site-list__item--delivery {
+    @include font(15px, 24px, $gray-color);
+  }
+
 }

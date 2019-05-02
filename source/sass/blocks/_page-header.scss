@@ -1,5 +1,5 @@
 .main-nav {
-  display:flex;
+  display: flex;
   flex-direction: column;
 
   position: relative;
@@ -24,10 +24,10 @@
 
 .main-nav--closed .main-nav__toggle {
   position: absolute;
-  top: 30px;
+  top: 0px;
   right: 0;
-  width: 20px;
-  height: 20px;
+  width: 80px;
+  height: 80px;
   background-image: url("..img/icon-menu-close.svg");
   background-repeat: no-repeat;
 }
@@ -68,8 +68,6 @@
 }
 
 .main-nav__item a {
-  
-  
   color: #ffffff;
 
   @include list-item;
@@ -78,19 +76,14 @@
 .main-nav__wrapper-buy {
   display: none;
 }
-.main-nav__delivery-p {
-  padding: 0;
-  margin: 0;
-  
-  @include font-regular;
-  @include font(15px, 24px, $gray-color);
+.main-nav__list--delivery {
+  display: none;
 }
 .buy-list {
   @include font-bold;
   @include font(15px, 24px, $gray-color);
 }
 .site-list__item {
-
   text-align: center;
 }
 
@@ -120,79 +113,59 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    padding: 0 50px;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: -90px;
-    align-items: center;
     width: auto;
-  }
-  .main-nav__menu-wrapper {
-    min-height: 320;
-    margin: 0 auto;
-    background-color: #ffffff;
 
+    background-color: transparent;
   }
+
   .main-nav__toggle {
     display: none;
   }
   .main-nav__logo {
-    display: flex;
-    height: 90px;
-    width: 220px;
+    padding: 0;
     margin: 0;
     order: 0;
-    align-items: center;
-    justify-content: center;    
   }
 
   .main-nav__logo-image {
     width: 113px;
     height: 46px;
   }
-  
+
   .main-nav__wrapper-nav {
     display: flex;
     margin: 0;
     height: 90px;
-    width: 350px;
     justify-content: flex-end;
-    align-items: center;
     order: 2;
   }
   .main-nav__wrapper-toggles {
     display: flex;
     margin: 0;
     width: 540px;
-    justify-content: space-around;
+    justify-content: flex-end;
     order: 1;
-  }  
-  .site-list__item {
-    @include list-item;
   }
-  .site-list__item-tablet {
-    padding: 0 0 0 35px;
-    @include font(15px, 24px, $primary-color);
-  }
-  /*.main-nav__wrapper-buy {
-    order: 5;
-  }
-  .main-nav__delivery {
+
+  .main-nav__list--delivery {
     display: flex;
-    width: 330px;
-    flex-grow: 1; 
-    
-  }*/
+    flex-grow: 1;
+    justify-content: flex-end;
+    order: 6;
+  }
 }
 @media (min-width: $desctop-width) {
   .page-header {
     display: flex;
-    width: 1050px;
+    width: 1150px;
     margin: 0 auto;
   }
   .main-nav {
-    margin: 0 auto;
-    align-items: center;
-    flex-wrap: wrap;
+    margin-bottom: -70px;
   }
   .main-nav__logo {
     margin: 0;
@@ -204,39 +177,24 @@
   }
   .main-nav__wrapper-nav {
     width: 415px;
-    justify-content: space-between;
+    justify-content: flex-start;
     order: 0;
   }
   .main-nav__wrapper-toggles {
-    display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 415px;
     order: 2;
-  }   
+  }
   .main-nav__wrapper-buy {
     display: flex;
     flex-direction: row;
-    width: 1050px;
-    margin: 0 auto -60px auto;
-    order: 4; 
+    order: 4;
     justify-content: space-between;
-   }
-   .buy-list {
-     display: flex;
-     flex-direction: row;
-     width: 415px;
-     justify-content: space-between;
-   }
-   .main-nav__delivery {
-     display: flex;
-    
-   }
-  .site-list__item {
-    @include list-item;
   }
-  .site-list__item-tablet {
-    padding: 0;
-    @include font(17px, 24px, $primary-color);
+  .buy-list {
+    display: flex;
+    flex-direction: row;
+    width: 415px;
+    justify-content: flex-start;
   }
-
 }
