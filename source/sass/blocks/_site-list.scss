@@ -69,7 +69,7 @@
   .site-list__search-icon {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -110px;
     width: 17.6px;
     height: 17.6px;
     opacity: 0.2;
@@ -79,7 +79,6 @@
     padding: 30px;
   }
   .site-list__item--search svg {
-    
     border-left: 2px solid #000000;
     padding: 30px;
   }
@@ -102,6 +101,10 @@
     @include font-regular;
     color: $gray-color;
   }
+  .site-list__item--search span {
+    font-size: 0;
+    margin: 0;
+  }
 }
 @media (min-width: $desctop-width) {
   .site-list__item {
@@ -109,10 +112,6 @@
   }
   .site-list__item-tablet {
     margin-right: 60px;
-    padding: 30px 0;
-  }
-  .site-list__item-top {
-    margin-left: 60px;
     padding: 30px 0;
   }
   .site-list__item--buy {
