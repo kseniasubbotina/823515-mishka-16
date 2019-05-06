@@ -10,15 +10,21 @@
 .contacts__list {
   margin: 0;
   padding: 0;
+  border-collapse: collapse;
 
   @include font-regular;
   @include font(15px, 30px, $gray-color);
+}
+
+.contacts__list td {
+  padding-bottom: 30px;
 }
 
 .contacts__item {
   padding: 0;
   margin: 0;
   white-space: nowrap;
+  vertical-align: top;
 }
 
 .contacts__value {

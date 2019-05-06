@@ -84,6 +84,24 @@
 
 
 @media (min-width: $tablet-width) {
+  /*.page-main{ 
+    position: relative;
+  }
+  .page-main::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    top: 760px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+    background-image: url(../img/bg-zigzag-fill.svg);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-size: 120%;
+  }*/
   .main-menu {
     background-image: url("../img/hero-tablet@1x.jpg");
     background-size: cover;
