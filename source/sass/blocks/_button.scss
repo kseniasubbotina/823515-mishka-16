@@ -2,6 +2,7 @@
   width: 100%;
   padding: 20px;
   border: 2px solid $gray-color;
+  text-transform: uppercase;
 
   @include font-bold;
   @include font(17px, 20px, $gray-color);

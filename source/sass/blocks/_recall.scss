@@ -26,6 +26,7 @@
 .recall__toggles {
   margin: 0 0 35px 0;
   padding: 0;
+  display: flex;
 }
 
 .recall__autor {
@@ -47,4 +48,59 @@
 .recall__write {
   margin: 0;
   padding: 0;
+}
+
+.recall__prew {
+  width: 50%;
+  padding: 15px;
+  border: 1px solid #ececec;
+  background-image: url("../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+
+  @include font-bold;
+  @include font(17px, 20px, $gray-color);
+}
+
+.recall__next {
+  width: 50%;
+  padding: 15px;
+  border: 1px solid #ececec;
+  background-image: url("../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+
+  @include font-bold;
+  @include font(17px, 20px, $gray-color);
+}
+
+@media (min-width: $tablet-width) {
+  .recall__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .recall__tittle {
+    @include font(43px, 50px, $primary-color);
+  }
+
+  .recall__list {
+    display: flex;
+  }
+
+  .recall__text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 70px 0;
+
+    @include font(17px, 30px, $primary-color);
+  }
+
+  .link-button {
+    margin-left: auto;
+    margin-bottom: auto;
+    order: 0;
+  }
 }

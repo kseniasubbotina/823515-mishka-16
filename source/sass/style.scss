@@ -2,9 +2,8 @@
 @import "mixin";
 @import "fonts";
 @import "base";
-@import "blocks/main-nav";
+@import "blocks/page-header";
 @import "blocks/main-menu";
-@import "blocks/page-title";
 @import "blocks/page-main__wrapper";
 @import "blocks/week-product";
 @import "blocks/about-us";
@@ -21,3 +20,5 @@
 @import "blocks/catalog";
 @import "blocks/process";
 @import "blocks/process-wrappers";
+@import "blocks/scaffolding";
+@import "blocks/site-list";

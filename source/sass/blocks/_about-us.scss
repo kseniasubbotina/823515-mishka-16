@@ -1,45 +1,92 @@
 .about-us {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+  position: relative;
 }
 
-.about-us_header {
-  margin: 0 0 60px 0;
+.about-us::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  top: -30px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  background-size: 80%;
+}
+
+.about-us__header {
+  margin: 0 0 20px 0;
   padding: 0;
 
   @include font-bold;
   @include font(25px, 30px, $primary-color);
 }
 
-.about-us_list {
+.about-us__list {
   margin: 0;
   padding: 0;
 }
 
-
 .about-us__item {
   @include list-item;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 
   @include font-bold;
   @include font(17px, 20px, $primary-color);
 }
 
-.recall__prew {
-  width: 50%;
-  padding: 20px;
-  border: 2px solid $gray-color;
-
-  @include font-bold;
-  @include font(17px, 20px, $gray-color);
-  background-color: transparent;
+.about-us__item p {
+  padding: 0;
+  margin: 0;
 }
 
-.recall__next {
-  width: 50%;
-  padding: 20px;
-  border: 2px solid $gray-color;
+.about-us__item svg {
+  margin-bottom: 15px;
+}
 
-  @include font-bold;
-  @include font(17px, 20px, $gray-color);
-  background-color: transparent;
+.about-us__item--flower path,
+.about-us__item--money path,
+.about-us__item--heart path,
+.about-us__item--clew path,
+.about-us__item--rocket path,
+.about-us__item--box path {
+  fill: $green-color;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__header {
+    margin: 0 0 40px 0;
+
+    @include font(43px, 50px, $primary-color);
+  }
+
+  .about-us__list {
+    display: flex;
+  }
+
+  .about-us__wrapper-column1,
+  .about-us__wrapper-column2 {
+    padding-right: 100px;
+    width: 50%;
+  }
+
+  .about-us__item {
+    @include font(20px, 22px, $primary-color);
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .about-us {
+    padding: 0 175px;
+  }
+
+  .about-us__header {
+    margin: 0 0 40px 0;
+
+    @include font(53px, 57px, $primary-color);
+  }
 }

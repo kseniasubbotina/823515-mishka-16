@@ -4,3 +4,30 @@
 
   background-color: $light-gray;
 }
+
+.social {
+  display: flex;
+  justify-content: center;
+
+  @include list-item;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+}
+
+.copyright__icon {
+  margin-left: 30px;
+  width: 27px;
+  height: 34px;
+}
+
+.copyright__icon path {
+  fill: $green-color;
+}
